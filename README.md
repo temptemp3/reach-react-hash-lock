@@ -2,6 +2,10 @@
 
 React.js UI for [Reach Hash Lock Workshop](https://github.com/temptemp3/reach-workshop-hash-lock)
 
+See also:
+
+* [Relay](https://github.com/temptemp3/reach-react-relay)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
