@@ -122,7 +122,7 @@ function App() {
           <Form.Control name="AMT" size="lg" type="text" placeholder="Amount" onChange={handleChange} />
         </Col>
         <Col xs={6}>
-          <Form.Control name="PASS" size="lg" type="password" placeholder="Password" onChange={handleChange} />
+          <Form.Control name="PASS" size="lg" type="number" placeholder="Secret number" onChange={handleChange} />
         </Col>
         <Col xs={3}>
           <Button size="lg" onClick={handleAlice} disabled={!state.acc}>Send</Button>
@@ -133,10 +133,10 @@ function App() {
           <h2>Receive funds</h2>
         </Col>
         <Col xs={3}>
-          <Form.Control name="INFO" size="lg" type="text" placeholder="Info" onChange={handleChange} />
+          <Form.Control name="INFO" size="lg" type="number" placeholder="Info" onChange={handleChange} />
         </Col>
         <Col xs={6}>
-          <Form.Control name="PASS" size="lg" type="password" placeholder="Password" onChange={handleChange} />
+          <Form.Control name="PASS" size="lg" type="number" placeholder="Secret number" onChange={handleChange} />
         </Col>
         <Col xs={3}>
           <Button size="lg" onClick={handleBob} disabled={!state.acc}>Receive</Button>
