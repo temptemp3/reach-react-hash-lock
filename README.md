@@ -5,6 +5,7 @@ React.js UI for [Reach Hash Lock Workshop](https://github.com/temptemp3/reach-wo
 See also:
 
 * [Relay](https://github.com/temptemp3/reach-react-relay)
+* [Trust fund](https://github.com/temptemp3/reach-react-trust-fund)
 
 # Getting Started with Create React App
 
