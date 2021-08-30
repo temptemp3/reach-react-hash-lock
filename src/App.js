@@ -43,9 +43,9 @@ function App() {
   const handleConnect = async () => {
     console.log("Connecting ...")
     const acc = await stdlib.getDefaultAccount()
-    const addr = await acc.getAddress();
-    const balAtomic = await stdlib.balanceOf(acc);
-    const bal = stdlib.formatCurrency(balAtomic, 4);
+    const addr = stdlib.formatAddress(await acc.getAddress())
+    const balAtomic = await stdlib.balanceOf(acc)
+    const bal = stdlib.formatCurrency(balAtomic, 4)
     setState({
       ...state,
       acc,
@@ -78,7 +78,7 @@ function App() {
   const handleBob = async () => {
     console.log("Handling bob ...")
     let { INFO, PASS } = query
-    const ctc = state.acc.attach(backend, INFO)
+    const ctc = state.acc.attach(backend, parseInt(INFO))
     await backend.Bob(ctc, {
       getPass: () => {
         console.log(`Bob asked to give the preimage`);
